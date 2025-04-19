@@ -36,7 +36,7 @@ const SportsInfrastructure = () => {
           >
             <h2 className="heading">Sports<span className="main-color"> Infrastructure</span></h2>
             <p className="subheading">
-            At Push Sports, we believe that world-class sports education starts with state-of-the-art facilities. Our Sports Infrastructure services are designed to help educational institutions create and maintain top-notch sports environments that inspire excellence and foster athletic development.
+            At Ars Sports, we believe that world-class sports education starts with state-of-the-art facilities. Our Sports Infrastructure services are designed to help educational institutions create and maintain top-notch sports environments that inspire excellence and foster athletic development.
             </p>
             <a href="#" className="btn">Learn More</a>
           </motion.div>

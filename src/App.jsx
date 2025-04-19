@@ -7,6 +7,7 @@ import SportsInfrastructure from './component/SportsInfra/SportsInfrastructure';
 import Footer from './component/Footer/Footer';
 import AdmissionFloatingButton from './component/Admisssion/AdmissionFloatingButton';
 import Contact from './component/contactus/contact';
+import Banner from './component/banner/Banner';
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
     <>
       <div>
         <PushNavbar />
+        <Banner/>
         <WhyPushSports />
         <BestInClass />
         <SportsInfrastructure />
