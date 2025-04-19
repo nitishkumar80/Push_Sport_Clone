@@ -25,7 +25,7 @@ const SportsInfrastructure = () => {
             viewport={{ once: true }}
             variants={fadeInLeft}
           >
-            <img src="https://sportzvillage.com/wp-content/uploads/2020/12/sport-village-school-image.png" alt="Sports Infra" />
+            <img src="./CRICKET.png" alt="Sports Infra" />
           </motion.div>
           <motion.div
             className="col-lg-6 text-container"
@@ -38,7 +38,7 @@ const SportsInfrastructure = () => {
             <p className="subheading">
             At Push Sports, we believe that world-class sports education starts with state-of-the-art facilities. Our Sports Infrastructure services are designed to help educational institutions create and maintain top-notch sports environments that inspire excellence and foster athletic development.
             </p>
-            <a href="https://pushsports.in/sports-infrastructure/" className="btn">Learn More</a>
+            <a href="#" className="btn">Learn More</a>
           </motion.div>
         </div>
 
@@ -57,7 +57,7 @@ const SportsInfrastructure = () => {
 
 
             </p>
-            <a href="https://pushsports.in/sports-academy/" className="btn">Learn More</a>
+            <a href="#" className="btn">Learn More</a>
           </motion.div>
           <motion.div
             className="col-lg-6 img-container"
@@ -66,7 +66,7 @@ const SportsInfrastructure = () => {
             viewport={{ once: true }}
             variants={fadeInLeft}
           >
-            <img src="https://sportzvillage.com/wp-content/uploads/2020/12/sport-village-academies-image.png" alt="Multi Sports" />
+            <img src="./vollyball.png" alt="Multi Sports" />
           </motion.div>
         </div>
 
@@ -79,7 +79,7 @@ const SportsInfrastructure = () => {
             viewport={{ once: true }}
             variants={fadeInLeft}
           >
-            <img src="https://sportzvillage.com/wp-content/uploads/2020/12/sport-village-xp-image.png" alt="School Hub" />
+            <img src="./football.png" alt="School Hub" />
           </motion.div>
           <motion.div
             className="col-lg-6 text-container"
@@ -92,7 +92,7 @@ const SportsInfrastructure = () => {
             <p className="subheading">
             Empowering students through sports starts with a robust and dynamic curriculum. Our In-School Sports Curriculum Program is designed to integrate sports education seamlessly into your school’s academic framework, fostering physical fitness, teamwork, and a love for sports among students.
             </p>
-            <a href="https://pushsports.in/school-hub/" className="btn">Learn More</a>
+            <a href="#" className="btn">Learn More</a>
           </motion.div>
         </div>
 
@@ -109,7 +109,7 @@ const SportsInfrastructure = () => {
             <p className="subheading">
             Explore various sports with our pay-as-you-go program. Enjoy flexibility and access to high quality venues as you challenge your friends in your favorite sports.
             </p>
-            <a href="https://pushsports.in/sports-academy/" className="btn">Learn More</a>
+            <a href="#" className="btn">Learn More</a>
           </motion.div>
           <motion.div
             className="col-lg-6 img-container"
@@ -118,7 +118,7 @@ const SportsInfrastructure = () => {
             viewport={{ once: true }}
             variants={fadeInLeft}
           >
-            <img src="https://sportzvillage.com/wp-content/uploads/2020/12/sport-village-foundation-image.png" alt="Pay-n-Play" />
+            <img src="./multiple.png" alt="Pay-n-Play" />
           </motion.div>
         </div>
       </div>

@@ -4,6 +4,7 @@
     padding: 40px 0;
     font-family: Arial, sans-serif;
     text-align: center;
+ 
   }
   
   .footer-container {
@@ -114,4 +115,12 @@
       margin-bottom: 20px;
     }
   }
+
+  @media (min-width: 1034px) {
+    .footer {
+      margin-left: 75px;
+      margin-right: 75px;
+      border-top-left-radius: 40px;
+      border-top-right-radius: 40px;
+    }}
   

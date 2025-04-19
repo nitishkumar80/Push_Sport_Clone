@@ -26,7 +26,7 @@ const Navbar = () => {
   return (
     <header className={`push-navbar ${isScrolled ? 'scrolled' : ''}`} id="push_navbar">
       <div className="top-bar">
-        <a href="https://pushsports.in/book-a-free-trial-class/" className="top-bar-link">
+        <a href="#" className="top-bar-link">
           <span className="text-white">
             Book a <span className="text-neon-green">Trial</span> Class
           </span>
@@ -36,11 +36,11 @@ const Navbar = () => {
       <div className="nav-wrapper">
         <nav className="nav-container">
           <div className="nav-logo">
-            <a href="https://pushsports.in/" className="custom-logo-link" rel="home" aria-current="page">
+            <a href="#" className="custom-logo-link" rel="home" aria-current="page">
               <img
                 width="1536"
                 height="556"
-                src="https://pushsports.in/wp-content/uploads/2024/08/push-final-logo.png"
+                src="./logo.png"
                 className="custom-logo"
                 alt="Push Sports"
                 loading="lazy"
@@ -51,38 +51,28 @@ const Navbar = () => {
           <div className={`nav-menu ${isMobileMenuOpen ? 'open' : ''}`}>
             <ul className="nav-list">
               <li className="nav-item">
-                <a href="https://pushsports.in/sports-academy/" className="nav-link" onClick={closeMobileMenu}>Sports Academy</a>
+                <a href="#" className="nav-link" onClick={closeMobileMenu}>Sports Academy</a>
               </li>
               <li className="nav-item">
-                <a href="https://pushsports.in/school-hub/" className="nav-link" onClick={closeMobileMenu}>School hub</a>
+                <a href="#" className="nav-link" onClick={closeMobileMenu}>Service</a>
               </li>
               <li className="nav-item">
-                <a href="https://pushsports.in/sports-infrastructure/" className="nav-link" onClick={closeMobileMenu}>Sports Infrastructure</a>
+                <a href="#" className="nav-link" onClick={closeMobileMenu}>Sports Infrastructure</a>
               </li>
               <li className="nav-item">
-                <a href="https://pushsports.in/franchise/" className="nav-link" onClick={closeMobileMenu}>Franchise</a>
-              </li>
-              <li className="nav-item dropdown">
-                <button className="dropdown-toggle" aria-expanded="false" aria-haspopup="true">
-                  Story <FontAwesomeIcon icon={faChevronDown} className="dropdown-icon" />
-                </button>
-                <ul className="dropdown-menu">
-                  <li className="dropdown-item">
-                    <a href="https://pushsports.in/about/" className="dropdown-link" onClick={closeMobileMenu}>About us</a>
-                  </li>
-                  <li className="dropdown-item">
-                    <a href="https://pushsports.in/push-sports-shark-tank-india/" className="dropdown-link" onClick={closeMobileMenu}>Shark Tank</a>
-                  </li>
-                </ul>
+                <a href="#" className="nav-link" onClick={closeMobileMenu}>Fee Structure</a>
               </li>
               <li className="nav-item">
-                <a href="https://pushsports.in/contact/" className="nav-link" onClick={closeMobileMenu}>Contact Us</a>
+                <a href="#" className="nav-link" onClick={closeMobileMenu}>About Us</a>
+              </li>
+              <li className="nav-item">
+                <a href="#" className="nav-link" onClick={closeMobileMenu}>Contact Us</a>
               </li>
             </ul>
           </div>
 
           <div className="nav-actions">
-            <a href="https://pushsports.in/student-login/" className="login-button" aria-label="Login">
+            <a href="#" className="login-button" aria-label="Login">
               <FontAwesomeIcon icon={faUserLock} />
               <span className="login-text">Login</span>
             </a>

@@ -29,7 +29,7 @@ const WhyPushSports = () => {
     <section className="why-push-sports">
       <div className="container">
         <h2 className="heading">
-          Why <span className="main-color">Push Sports?</span>
+          Why <span className="main-color">Ars Kreedashala Sports?</span>
         </h2>
         <p className="description">
           We offer world-class facilities, experienced coaches, and a holistic approach to world-class arenas, elite coaches, and competitive exposure with a 15:1

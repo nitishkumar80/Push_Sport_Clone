@@ -9,10 +9,10 @@ const Footer = () => {
           <div className="footer-column">
             <h4>Company</h4>
             <ul>
-              <li><a href="/about">About Us</a></li>
-              <li><a href="/blog">Blogs</a></li>
-              <li><a href="/careers">Careers</a></li>
-              <li><a href="/contact">Contact Us</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Blogs</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Contact Us</a></li>
               {/* <li><a href="#">Shark Tank</a></li> */}
             </ul>
           </div>
@@ -30,8 +30,9 @@ const Footer = () => {
           </div>
 
           <div className="footer-logo">
-            <img src="https://pushsports.in/wp-content/uploads/2024/05/PUSH-Logo-New-Final-Color_white-2048x741.png" alt="Push Sports Logo" />
-            <p>INDIA'S NEW PLAYGROUND</p>
+            <img src="./logo.png" alt="Push Sports Logo" />
+            <p>TRANSFORMING SPORTS ECO SYSTEM</p>
+
             <div className="social-icons">
               <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/2021_Facebook_icon.svg/2048px-2021_Facebook_icon.svg.png" alt="Facebook" /></a>
               <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" /></a>
@@ -44,11 +45,10 @@ const Footer = () => {
             <h4>Our Services</h4>
             <ul>
               <li><a href="#">Franchise</a></li>
-              <li><a href="#">School Hub</a></li>
               <li><a href="#">Membership</a></li>
               <li><a href="#">Pay to Play</a></li>
               <li><a href="#">Sports Academy</a></li>
-              <li><a href="#">School Infrastructure</a></li>
+              {/* <li><a href="#">School Infrastructure</a></li> */}
 
               
           

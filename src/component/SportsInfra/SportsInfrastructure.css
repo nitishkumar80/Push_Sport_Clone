@@ -42,7 +42,7 @@
 }
 
 .main-color {
-    color: #00d779;
+    color: #737b25;
 }
 
 .subheading {
@@ -53,7 +53,7 @@
 .btn {
     display: inline-block;
     padding: 12px 24px;
-    background-color: #00d779;
+    background-color: #737b25;
     color: #fff;
     text-decoration: none;
     font-size: 16px;
@@ -63,7 +63,7 @@
 }
 
 .btn:hover {
-    background-color: #00b366;
+    background-color: silver;
 }
 
 @media (max-width: 992px) {
