@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+/* General Styles */
+.infrastructure-services {
+  margin-top: 110px;
+}
+
+.container,
+.container-fluid {
+  width: 100%;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col-lg-3, .col-lg-8, .col-lg-9,
+.col-md-12, .col-sm-12, .col-12 {
+  position: relative;
+  width: 100%;
+}
+
+/* Header Section */
+.header-section {
+  text-align: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.header-content h2 {
+  font-size: 35px;
+  font-weight: 400;
+  margin-bottom: 1rem;
+  color: #737b25;
+  font-family: "Bebas Neue", sans-serif;
+}
+
+.header-content p {
+  color: #000;
+  margin-bottom: 0;
+  font-size: 20px;
+  line-height: 1.6;
+  font-family: "Nunito", sans-serif;
+}
+
+/* Banner Section */
+.banner-section {
+  margin-bottom: 2rem;
+  width: 1200px;
+  margin: auto;
+}
+
+.banner-image.desktop {
+  display: block;
+}
+
+.banner-image.mobile {
+  display: none;
+}
+
+.banner-image-1 img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  height: 400px;
+  border-radius: 45px;
+}
+
+/* Tab Section Layout */
+.tab-section {
+
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.section-heading {
+  font-size: 32px;
+  text-align: center;
+  font-family: 'Bebas Neue', sans-serif;
+  color: #737b25;
+}
+
+/* Updated Tab Layout Section */
+.tab-layout {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+  }
+  
+  /* Tab Navigation (Left Column) */
+  .tab-navigation {
+    width: 200px; /* Fixed width for the navigation */
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+  
+  /* Tab Content (Right Column) */
+  .tab-content {
+    flex-grow: 1; /* Make the content area grow to take up remaining space */
+    min-width: 0;
+  }
+  
+  
+
+/* Tab Buttons */
+.tab-button {
+  padding: 0.85rem 1rem;
+  background-color: transparent;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+  font-size: 1rem;
+  color: black;
+  font-weight: 900;
+  font-family: "Nunito", sans-serif;
+  transition: all 0.3s ease;
+
+}
+
+.tab-button:hover {
+ 
+  color: #737b25;
+}
+
+.tab-button.active {
+  background-color: #f8f9fa;
+  color: #737b25;
+  font-weight: bold;
+  border-left: 3px solid #737b25;
+}
+
+
+.tab-pane {
+  display: block;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.tab-pane picture img {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  margin-bottom: 1.5rem;
+  border-radius: 10px;
+}
+
+/* Content Styles */
+.content-details h3 {
+  font-family: "Bebas Neue", sans-serif;
+  color: #737b25;
+  font-size: 24px;
+  margin-bottom: 1rem;
+}
+
+.content-details p {
+  font-family: "Nunito", sans-serif;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.content-details h4,
+.content-details h5 {
+  font-family: "Nunito", sans-serif;
+  font-size: 1.1rem;
+  margin: 1.5rem 0 1rem;
+  font-weight: 600;
+}
+
+/* Custom Bullet List */
+.content-details ul {
+  list-style: none;
+  padding-left: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.content-details ul li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 0.5rem;
+  line-height: 1.5;
+}
+
+.content-details ul li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  color: #737b25;
+  font-size: 1rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .tab-layout {
+    flex-direction: column;
+  }
+
+  .tab-navigation {
+    flex-direction: row;
+    overflow-x: auto;
+    width: 100%;
+    gap: 0.5rem;
+  }
+
+  .tab-button {
+    white-space: nowrap;
+    border-left: none;
+    border-bottom: 1px solid transparent;
+  }
+
+  .tab-button.active {
+    border-left: none;
+    border-bottom: 1px solid #737b25;
+  }
+}
+
+/* Animation for tab content */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+@media (max-width: 767.98px) {
+    .banner-image.desktop {
+      display: none !important;
+    }
+  
+    .banner-image.mobile {
+      display: block;
+      width: 100%;
+      height: auto;
+     
+      max-width: 100%;
+    }
+  
+    .banner-section {
+      width: 100%;
+   
+  
+
+    }
+  }
