@@ -1,0 +1,126 @@
+import React, { useState, useEffect } from 'react';
+import MoreArenas from '../MoreArenas';
+
+
+export default function Volleyball() {
+  const images = [
+    "https://img.freepik.com/free-photo/girl-playing-basketball_23-2147821012.jpg?t=st=1746699699~exp=1746703299~hmac=50898859df9b2405fc94316f7e2fef5ab9123be57f6e94552e608927d39ecb1f&w=2000", 
+    "https://img.freepik.com/free-photo/girl-playing-basketball_23-2147821011.jpg?t=st=1746699723~exp=1746703323~hmac=555ebf6221b46b5f52c5f522c53a3a147a992b27eb3c5b5f9f44d517c2cd2865&w=2000",
+    "https://img.freepik.com/free-photo/girls-playing-basketball_23-2147821154.jpg?t=st=1746699817~exp=1746703417~hmac=0d9a1fe63e82faf862c47912147a1c1603d0f93021dfbdfb25a7aa7711742eef&w=2000"
+  ];
+
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+    }, 3000); // change slide every 3 seconds
+    return () => clearInterval(interval);
+  }, []);
+
+  return (
+    <div className="academy-page">
+      <section className="hero-section">
+        <div className="hero-text">
+          <h1>Ars Kreedashala Sports Academy</h1>
+          <p>Daladali Chowk, Near Sarna Hotel</p>
+          <p>Ring Road, Ranchi </p>
+          <div className="opening-hours">
+            <h4>Opening Hours</h4>
+            <div className="timings">
+              <span className="day">Monday, Wednesday, Friday</span>
+              <span className="time green-bg">4:30 – 7:30 pm</span>
+            </div>
+            <div className="timings">
+              <span className="day">Saturday, Sunday</span>
+              <span className="time green-bg">8:00 am – 11:00 am</span>
+            </div>
+          </div>
+        </div>
+
+        <div className="hero-image">
+          <div className="slider-container">
+            <div
+              className="slider"
+              style={{ transform: `translateX(-${currentIndex * 100}%)` }}
+            >
+              {images.map((src, index) => (
+                <div className="slide" key={index}>
+                  <img src={src} alt={`Slide ${index + 1}`} />
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="available-section">
+        <div className="section-title">
+          <h2>Sports <span className="highlight">Available</span></h2>
+        </div>
+        <div className="icons-row">
+          <div className="icon-box">
+            <img src="https://cdn-icons-png.freepik.com/256/7349/7349807.png?uid=R69734068&ga=GA1.1.657497519.1744262750" alt="Volleyball" />
+          </div>
+        </div>
+
+        <div className="section-title">
+          <h2>Amenities <span className="highlight">Available</span></h2>
+        </div>
+        <div className="icons-row amenities horizontal">
+          <div className="icon-box">
+            <img src="https://pushsports.in/wp-content/uploads/2024/04/Parking.png" alt="Parking" />
+            <p>Parking</p>
+          </div>
+          <div className="icon-box">
+            <img src="https://pushsports.in/wp-content/uploads/2024/04/Contactless-Attendance.png" alt="Contactless" />
+            <p>Contactless Attendance</p>
+          </div>
+          <div className="icon-box">
+            <img src="https://pushsports.in/wp-content/uploads/2024/04/Washroom-and-shower-1.png" alt="Washroom" />
+            <p>Washroom & Shower</p>
+          </div>
+          <div className="icon-box">
+            <img src="https://pushsports.in/wp-content/uploads/2024/06/Filter-Water.png" alt="Water" />
+            <p>Filtered Water</p>
+          </div>
+          <div className="icon-box">
+            <img src="https://pushsports.in/wp-content/uploads/2024/06/Sitting-Area.png" alt="Sitting Area" />
+            <p>Sitting Area</p>
+          </div>
+          <div className="icon-box">
+            <img src="https://pushsports.in/wp-content/uploads/2024/06/Camera-Security.png" alt="Camera Security" />
+            <p>Camera Security</p>
+          </div>
+        </div>
+      </section>
+
+      <section className="form-section">
+        <h2>Book a <span className="highlight">Free Trial Class</span></h2>
+        <form>
+          <div className="form-row">
+            <input type="text" placeholder="Athlete Name" />
+            <input type="text" placeholder="Phone Number" />
+          </div>
+          <div className="form-row">
+            <input type="email" placeholder="Email Address" />
+            <input type="date" placeholder="Date of Birth" />
+          </div>
+          <div className="form-row">
+            <input type="date" placeholder="Date of Trial" />
+            <select>
+              <option>Select Sport</option>
+              <option>Volleyball</option>
+              <option>Football</option>
+              <option>Cricket</option>
+            </select>
+          </div>
+          <button type="submit" className="book-now">BOOK NOW</button>
+        </form>
+      </section>
+      <section>
+        <MoreArenas/>
+      </section>
+    </div>
+  );
+}

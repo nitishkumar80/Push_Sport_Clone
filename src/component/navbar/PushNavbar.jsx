@@ -24,7 +24,7 @@ const Navbar = () => {
   };
 
   return (
-    <header className={`push-navbar ${isScrolled ? 'scrolled' : ''}`} id="push_navbar">
+    <header className={`ars-navbar ${isScrolled ? 'scrolled' : ''}`} id="ars_navbar">
       <div className="top-bar">
         <a href="/contact" className="top-bar-link">
           <span className="text-white">
@@ -51,7 +51,7 @@ const Navbar = () => {
           <div className={`nav-menu ${isMobileMenuOpen ? 'open' : ''}`}>
             <ul className="nav-list">
               <li className="nav-item">
-                <a href="#" className="nav-link" onClick={closeMobileMenu}>Sports Academy</a>
+                <a href="sports-academy" className="nav-link" onClick={closeMobileMenu}>Sports Academy</a>
               </li>
               <li className="nav-item">
                 <a href="service" className="nav-link" onClick={closeMobileMenu}>Service</a>
@@ -63,7 +63,7 @@ const Navbar = () => {
                 <a href="/Franchise" className="nav-link" onClick={closeMobileMenu}>Franchise</a>
               </li>
               <li className="nav-item">
-                <a href="#" className="nav-link" onClick={closeMobileMenu}>Fee Structure</a>
+                <a href="/fee" className="nav-link" onClick={closeMobileMenu}>Fee Structure</a>
               </li>
               <li className="nav-item">
                 <a href="/about" className="nav-link" onClick={closeMobileMenu}>About Us</a>

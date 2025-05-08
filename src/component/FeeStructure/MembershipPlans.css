@@ -1,0 +1,122 @@
+.pricing-container {
+    text-align: center;
+    padding: 40px 20px;
+    font-family: 'Arial', sans-serif;
+    background: #f9f9f9;
+  }
+  
+  .title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #0d1b2a;
+  }
+  
+  .subtitle {
+    font-size: 1.1rem;
+    color: #6c757d;
+    margin-bottom: 40px;
+  }
+  
+  .plans-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  
+  .plan-card {
+    background: white;
+    border-radius: 20px;
+    padding: 30px 20px;
+    width: 280px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .plan-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  
+  .plan-price {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 10px 0;
+  }
+  
+  .plan-billing {
+    font-size: 0.95rem;
+    color: #6c757d;
+    margin-bottom: 20px;
+  }
+  
+  .features {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 25px;
+  }
+  
+  .features li {
+    margin: 8px 0;
+    font-size: 0.95rem;
+  }
+  
+  .join-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+  
+  /* Color Themes */
+  .basic .plan-price {
+    background-color: #ffc107;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 10px;
+  }
+  
+  .basic .join-button {
+    background-color: #ffc107;
+  }
+  
+  .basic .join-button:hover {
+    background-color: #e0a800;
+  }
+  
+  .pro .plan-price {
+    background-color: #28a745;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 10px;
+  }
+  
+  .pro .join-button {
+    background-color: #28a745;
+  }
+  
+  .pro .join-button:hover {
+    background-color: #218838;
+  }
+  
+  .elite .plan-price {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 10px;
+  }
+  
+  .elite .join-button {
+    background-color: #007bff;
+  }
+  
+  .elite .join-button:hover {
+    background-color: #0056b3;
+  }
+  

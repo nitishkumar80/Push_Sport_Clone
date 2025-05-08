@@ -4,7 +4,7 @@ import './SportsFranchise.css';
 const SportsFranchise = () => {
   return (
     <div className="sports-franchise">
-      <header className="hero-section">
+      <header className="hero-section1">
         <h1>
           Unlock Your Potential With <span className="highlight1">ARS Kreedashala</span>
         </h1>

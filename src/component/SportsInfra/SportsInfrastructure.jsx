@@ -57,7 +57,7 @@ const SportsInfrastructure = () => {
 
 
             </p>
-            <a href="#" className="btn">Learn More</a>
+            <a href="/sports-academy" className="btn">Learn More</a>
           </motion.div>
           <motion.div
             className="col-lg-6 img-container"
@@ -92,7 +92,7 @@ const SportsInfrastructure = () => {
             <p className="subheading">
             Empowering students through sports starts with a robust and dynamic curriculum. Our In-School Sports Curriculum Program is designed to integrate sports education seamlessly into your school’s academic framework, fostering physical fitness, teamwork, and a love for sports among students.
             </p>
-            <a href="#" className="btn">Learn More</a>
+            <a href="/service" className="btn">Learn More</a>
           </motion.div>
         </div>
 
@@ -109,7 +109,7 @@ const SportsInfrastructure = () => {
             <p className="subheading">
             Explore various sports with our pay-as-you-go program. Enjoy flexibility and access to high quality venues as you challenge your friends in your favorite sports.
             </p>
-            <a href="#" className="btn">Learn More</a>
+            <a href="/sports-academy" className="btn">Learn More</a>
           </motion.div>
           <motion.div
             className="col-lg-6 img-container"

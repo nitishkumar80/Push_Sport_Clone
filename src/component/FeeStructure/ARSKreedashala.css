@@ -1,0 +1,635 @@
+/* Base Styles */
+.arskreedashala-container {
+    min-height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin-top: 90px;
+  }
+  
+  .arskreedashala-container-inner {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  /* Header Styles */
+  .arskreedashala-header {
+    position: relative;
+    background: linear-gradient(to right, #1e3a8a, #6b21a8);
+    color: white;
+    overflow: hidden;
+  }
+  
+  .arskreedashala-nav-container {
+    position: relative;
+    z-index: 20;
+  }
+  
+  .arskreedashala-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+  }
+  
+  .arskreedashala-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .arskreedashala-logo-icon {
+    font-size: 2rem;
+  }
+  
+  .arskreedashala-logo-text {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .arskreedashala-desktop-nav {
+    display: none;
+    gap: 30px;
+  }
+  
+  .arskreedashala-nav-link {
+    font-weight: 500;
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .arskreedashala-nav-link:hover {
+    color: #fcd34d;
+  }
+  
+  .arskreedashala-mobile-menu-button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  
+  .arskreedashala-mobile-menu {
+    display: flex;
+    flex-direction: column;
+    background-color: #1e40af;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 10px;
+    gap: 10px;
+  }
+  
+  .arskreedashala-mobile-link {
+    color: white;
+    text-decoration: none;
+    padding: 8px 0;
+    transition: color 0.3s;
+  }
+  
+  .arskreedashala-mobile-link:hover {
+    color: #fcd34d;
+  }
+  
+  .arskreedashala-hero-content {
+    padding: 80px 0;
+    text-align: center;
+  }
+  
+  .arskreedashala-hero-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .arskreedashala-hero-subtitle {
+    font-size: 1.25rem;
+    max-width: 800px;
+    margin: 0 auto 30px;
+  }
+  
+  .arskreedashala-hero-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+  }
+  
+  .arskreedashala-primary-button {
+    background-color: #f59e0b;
+    color: black;
+    font-weight: bold;
+    padding: 12px 24px;
+    border-radius: 9999px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .arskreedashala-primary-button:hover {
+    background-color: #d97706;
+  }
+  
+  .arskreedashala-secondary-button {
+    background-color: transparent;
+    color: white;
+    font-weight: bold;
+    padding: 12px 24px;
+    border-radius: 9999px;
+    border: 2px solid white;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  
+  .arskreedashala-secondary-button:hover {
+    background-color: white;
+    color: #1e3a8a;
+  }
+  
+  /* Wave Animation */
+  .arskreedashala-wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/85486/wave.svg') repeat-x;
+    background-size: 2000px 100px;
+  }
+  
+  .arskreedashala-wave1 {
+    animation: arskreedashala-wave-animate 30s linear infinite;
+    z-index: 10;
+    opacity: 1;
+    animation-delay: 0s;
+    bottom: 0;
+  }
+  
+  .arskreedashala-wave2 {
+    animation: arskreedashala-wave-animate2 15s linear infinite;
+    z-index: 9;
+    opacity: 0.5;
+    animation-delay: -5s;
+    bottom: 10px;
+  }
+  
+  .arskreedashala-wave3 {
+    animation: arskreedashala-wave-animate3 10s linear infinite;
+    z-index: 8;
+    opacity: 0.2;
+    animation-delay: -2s;
+    bottom: 15px;
+  }
+  
+  @keyframes arskreedashala-wave-animate {
+    0% { background-position-x: 0; }
+    100% { background-position-x: 2000px; }
+  }
+  
+  @keyframes arskreedashala-wave-animate2 {
+    0% { background-position-x: 0; }
+    100% { background-position-x: -2000px; }
+  }
+  
+  @keyframes arskreedashala-wave-animate3 {
+    0% { background-position-x: 0; }
+    100% { background-position-x: 2000px; }
+  }
+  
+  /* Section Styles */
+  .arskreedashala-section {
+    padding: 60px 0;
+  }
+  
+  .arskreedashala-section-title {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  
+  .arskreedashala-section-description {
+    color: #4b5563;
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 40px;
+    font-size: 1.1rem;
+  }
+  
+  /* Sports Section */
+  .arskreedashala-sports-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  
+  .arskreedashala-sport-card {
+    padding: 25px;
+    border-radius: 12px;
+    color: white;
+    transition: transform 0.3s;
+  }
+  
+  .arskreedashala-sport-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .arskreedashala-sport-icon {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+  }
+  
+  .arskreedashala-sport-name {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .arskreedashala-sport-price {
+    opacity: 0.9;
+    margin-bottom: 15px;
+  }
+  
+  .arskreedashala-sport-button {
+    background-color: white;
+    color: #333;
+    font-weight: 600;
+    padding: 6px 12px;
+    border-radius: 9999px;
+    border: none;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background-color 0.3s;
+  }
+  
+  .arskreedashala-sport-button:hover {
+    background-color: #f3f4f6;
+  }
+  
+  /* Sport Color Classes */
+  .sport-amber { background-color: #f59e0b; }
+  .sport-emerald { background-color: #10b981; }
+  .sport-blue { background-color: #3b82f6; }
+  .sport-orange { background-color: #f97316; }
+  .sport-red { background-color: #ef4444; }
+  .sport-purple { background-color: #8b5cf6; }
+  .sport-teal { background-color: #14b8a6; }
+  .sport-cyan { background-color: #06b6d4; }
+  
+  /* Technology Section */
+  .arskreedashala-tech-section {
+    background-color: #f3f4f6;
+  }
+  
+  .arskreedashala-tech-content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  .arskreedashala-tech-image-container {
+    flex: 1;
+  }
+  
+  .arskreedashala-tech-image {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  }
+  
+  .arskreedashala-tech-text {
+    flex: 1;
+  }
+  
+  .arskreedashala-tech-title {
+    font-size: 1.75rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  
+  .arskreedashala-tech-description {
+    color: #4b5563;
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+  }
+  
+  .arskreedashala-tech-features {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .arskreedashala-tech-feature {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+  }
+  
+  .arskreedashala-tech-check {
+    color: #10b981;
+    font-weight: bold;
+  }
+  
+  /* Membership Section */
+  .arskreedashala-pricing-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+  
+  .arskreedashala-pricing-card {
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    background-color: white;
+  }
+  
+  .arskreedashala-popular-plan {
+    border: 2px solid #f59e0b;
+    transform: translateY(-15px);
+  }
+  
+  .arskreedashala-popular-badge {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #f59e0b;
+    color: black;
+    padding: 5px 15px;
+    font-size: 0.8rem;
+    font-weight: bold;
+  }
+  
+  .arskreedashala-pricing-card-content {
+    padding: 25px;
+  }
+  
+  .arskreedashala-plan-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .arskreedashala-plan-price {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .arskreedashala-plan-features {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 25px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .arskreedashala-plan-feature {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+  }
+  
+  .arskreedashala-feature-check {
+    color: #10b981;
+    font-weight: bold;
+  }
+  
+  .arskreedashala-plan-button {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    background-color: #3b82f6;
+    color: white;
+    transition: background-color 0.3s;
+  }
+  
+  .arskreedashala-plan-button:hover {
+    background-color: #2563eb;
+  }
+  
+  .arskreedashala-popular-button {
+    background-color: #f59e0b;
+    color: black;
+  }
+  
+  .arskreedashala-popular-button:hover {
+    background-color: #d97706;
+  }
+  
+  /* Facilities Section */
+  .arskreedashala-facilities-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+  
+  .arskreedashala-facility-card {
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  }
+  
+  .arskreedashala-facility-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .arskreedashala-facility-details {
+    padding: 20px;
+  }
+  
+  .arskreedashala-facility-name {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .arskreedashala-facility-description {
+    color: #4b5563;
+  }
+  
+  /* CTA Section */
+  .arskreedashala-cta-section {
+    background: linear-gradient(to right, #2563eb, #7c3aed);
+    color: white;
+    text-align: center;
+  }
+  
+  .arskreedashala-cta-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  
+  .arskreedashala-cta-subtitle {
+    font-size: 1.25rem;
+    max-width: 700px;
+    margin: 0 auto 30px;
+  }
+  
+  .arskreedashala-cta-button {
+    background-color: white;
+    color: #2563eb;
+    font-weight: bold;
+    padding: 12px 32px;
+    border-radius: 9999px;
+    border: none;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: all 0.3s;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  }
+  
+  .arskreedashala-cta-button:hover {
+    background-color: #f3f4f6;
+    transform: translateY(-2px);
+  }
+  
+
+  
+  .arskreedashala-contact-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    color: #9ca3af;
+  }
+  
+  .arskreedashala-contact-icon {
+    font-size: 1.1rem;
+  }
+  
+  .arskreedashala-social-links {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 25px;
+  }
+  
+  .arskreedashala-social-link {
+    color: #9ca3af;
+    font-size: 1.5rem;
+    transition: color 0.3s;
+  }
+  
+  .arskreedashala-social-link:hover {
+    color: white;
+  }
+  
+  .arskreedashala-app-title {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .arskreedashala-app-buttons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .arskreedashala-app-button {
+    background-color: #1f2937;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .arskreedashala-app-button:hover {
+    background-color: #374151;
+  }
+  
+  .arskreedashala-app-button-icon {
+    font-size: 1.1rem;
+  }
+  
+  .arskreedashala-footer-bottom {
+    border-top: 1px solid #374151;
+    padding-top: 20px;
+    text-align: center;
+    color: #9ca3af;
+    font-size: 0.9rem;
+  }
+  
+  /* Responsive Styles */
+  @media (min-width: 768px) {
+    .arskreedashala-desktop-nav {
+      display: flex;
+    }
+    
+    .arskreedashala-mobile-menu-button {
+      display: none;
+    }
+    
+    .arskreedashala-hero-title {
+      font-size: 3.5rem;
+    }
+    
+    .arskreedashala-hero-subtitle {
+      font-size: 1.5rem;
+    }
+    
+    .arskreedashala-hero-buttons {
+      flex-direction: row;
+      justify-content: center;
+    }
+    
+    .arskreedashala-sports-grid {
+      grid-template-columns: repeat(4, 1fr);
+    }
+    
+    .arskreedashala-tech-content {
+      flex-direction: row;
+      align-items: center;
+    }
+    
+    .arskreedashala-pricing-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .arskreedashala-facilities-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .arskreedashala-footer-grid {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .arskreedashala-hero-title {
+      font-size: 4rem;
+    }
+    
+    .arskreedashala-section-title {
+      font-size: 2.5rem;
+    }
+    
+    .arskreedashala-tech-title {
+      font-size: 2rem;
+    }
+    
+    .arskreedashala-cta-title {
+      font-size: 2.5rem;
+    }
+  }
+
+  

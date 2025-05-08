@@ -10,7 +10,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
 /* Base Styles */
-.push-navbar {
+.ars-navbar {
   position: fixed;
   width: 100%;
   top: 0;
@@ -19,11 +19,11 @@
   transition: var(--transition);
 }
 
-.push-navbar.scrolled {
+.ars-navbar.scrolled {
   box-shadow: var(--shadow);
 }
 
-.push-navbar.scrolled .nav-wrapper {
+.ars-navbar.scrolled .nav-wrapper {
   background-color: var(--white);
   height: 70px;
 }
@@ -73,7 +73,7 @@
   transition: var(--transition);
 }
 
-.push-navbar.scrolled .nav-logo .custom-logo {
+.ars-navbar.scrolled .nav-logo .custom-logo {
   max-width: 150px;
 }
 
