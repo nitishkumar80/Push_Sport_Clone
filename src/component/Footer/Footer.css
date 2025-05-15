@@ -1,135 +1,129 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: "Nunito", sans-serif;
+}
+
 .footer {
-    background-color: #000;
-    color: white;
+  background-color: #000;
+  color: white;
+  margin: 0 auto;
+  padding: 20px 15px 30px 15px; /* reduced top padding */
+  max-width: 1500px;
+  text-align: center;
+  box-sizing: border-box;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
 
-    font-family: "Nunito", sans-serif;
-    text-align: center;
- 
-  }
-  
-  .footer-container {
-    width: 85%;
-    margin: auto;
-  }
-  
+.footer-container {
+  width: 85%;
+  margin: auto;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  border-bottom: 1px solid #444;
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 180px;
+  margin: 30px 0; /* reduced from 70px */
+}
+
+.footer-column h4 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px; /* slight reduction */
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin: 6px 0; /* slightly reduced */
+}
+
+.footer-column ul li a {
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s;
+}
+
+.footer-column ul li a:hover {
+  color: #ffcc00;
+}
+
+.footer-logo {
+  flex: 1;
+  text-align: center;
+  margin: 10px 0; /* reduced vertical spacing */
+}
+
+.footer-logo img {
+  width: 160px; /* slightly smaller logo */
+  margin-bottom: 5px;
+}
+
+.footer-logo p {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.social-icons {
+  margin-top: 10px;
+}
+
+.social-icons a {
+  display: inline-block;
+  margin: 0 6px;
+}
+
+.social-icons img {
+  width: 22px;
+  height: 22px;
+  transition: opacity 0.3s;
+}
+
+.social-icons img:hover {
+  opacity: 0.7;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 10px; /* reduced */
+  margin-bottom: 0;
+}
+
+.footer-bottom p {
+  font-size: 13px;
+}
+
+.footer-bottom a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-bottom a:hover {
+  color: #ffcc00;
+}
+
+@media (max-width: 768px) {
   .footer-content {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-
-    border-bottom: 1px solid #444;
+    flex-direction: column;
+    text-align: center;
   }
-  
+
   .footer-column {
-    flex: 1;
-    min-width: 180px;
-    margin: 70px 0;
+    margin-bottom: 20px;
   }
-  
-  .footer-column h4 {
-    font-size: 18px;
-    font-weight: bold;
-    margin-bottom: 15px;
-  }
-  
-  .footer-column ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .footer-column ul li {
-    margin: 8px 0;
-  }
-  
-  .footer-column ul li a {
-    text-decoration: none;
-    color: white;
-    transition: color 0.3s;
-  }
-  
-  .footer-column ul li a:hover {
-    color: #ffcc00;
-  }
-  
-  .footer-logo {
-    flex: 1;
-    text-align: center;
-    margin: 20px 0;
-  }
-  
-  .footer-logo img {
-    width: 200px;
-    margin-bottom: 10px;
-  }
-  
-  .footer-logo p {
-    font-size: 16px;
-    font-weight: bold;
-  }
-  
-  .social-icons {
-    margin-top: 10px;
-  }
-  
-  .social-icons a {
-    display: inline-block;
-    margin: 0 8px;
-  }
-  
-  .social-icons img {
-    width: 24px;
-    height: 24px;
-    transition: opacity 0.3s;
-  }
-  
-  .social-icons img:hover {
-    opacity: 0.7;
-  }
-  
-  .footer-bottom {
-    text-align: center;
-    margin-top: 20px;
-  }
-  
-  .footer-bottom p {
-    font-size: 14px;
-  }
-  
-  .footer-bottom a {
-    color: white;
-    text-decoration: none;
-    transition: color 0.3s;
-  }
-  
-  .footer-bottom a:hover {
-    color: #ffcc00;
-  }
-  
-  @media (max-width: 768px) {
-    .footer-content {
-      flex-direction: column;
-      text-align: center;
-    }
-  
-    .footer-column {
-      margin-bottom: 20px;
-    }
-  }
-
-  @media (min-width: 1034px) {
-    .footer {
-      border-top-left-radius: 40px;
-      border-top-right-radius: 40px;
-    }
-  }
-
-  body{
-    margin: 0;
-    padding: 0;
-    height: 100%;
-  }
-  
-  
+}

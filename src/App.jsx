@@ -14,7 +14,7 @@ import SportsFranchise from './component/Franchise/SportsFranchise';
 import ServicePage from './component/service/ServicePage';
 import AdmissionForm from './component/Admisssion/AdmissionForm';
 import SportsAcademyPage from './component/SportsAcademy/SportsAcademyPage';
-import Cricket from './component/All-Sport/ Cricket';
+
 import Swimming from './component/All-Sport/Swimming/Swimming';
 import Basketball from './component/All-Sport/Basketball/Basketball';
 import Badminton from './component/All-Sport/Badminton/Badminton';
@@ -23,6 +23,7 @@ import Volleyball from './component/All-Sport/Volleyball/Volleyball';
 import Yoga from './component/All-Sport/Yoga/Yoga';
 import Gym from './component/All-Sport/Gym/Gym';
 import FeeStructure from './component/FeeStructure/FeeStructure';
+import Cricket from './component/All-Sport/Cricket';
 
 
 function App() {
@@ -53,7 +54,7 @@ function App() {
         <Route path="/service" element={<ServicePage />} />
         <Route path="/admission" element={<AdmissionForm />} />
         <Route path="/sports-academy" element={<SportsAcademyPage />} />
-        <Route path="/Cricket" element={<Cricket />} />
+        <Route path="/Cricket" element={<Cricket/>} />
 
         <Route path="/swimming" element={<Swimming />} />  
         <Route path="/Basketball" element={<Basketball />} />  
@@ -62,7 +63,7 @@ function App() {
         <Route path="/Volleyball" element={<Volleyball />} />  
         <Route path="/Yoga" element={<Yoga />} />  
         <Route path="/Gym" element={<Gym />} />  
-        <Route path="/fee" element={<FeeStructure />} />  
+        <Route path="/membership" element={<FeeStructure />} />  
 
         </Routes>
       <Footer />

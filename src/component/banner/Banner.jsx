@@ -33,6 +33,17 @@ const Banner = () => {
       imageUrl:
         "https://www.stack.com/wp-content/uploads/2024/09/stack.com-sled-training.png", // Replace with real URL
     },
+    {
+      title: "Join the Movement",
+      highlightedText: "Admissions Open Now",
+      description:
+        "Unlock your athletic potential with our expert-led programs. From beginners to pros, we welcome every athlete. Enroll today to access world-class training, expert guidance, and detailed performance tracking—anytime, anywhere.",
+      buttonText: "Apply Now",
+      buttonLink: "/admission", // Update with actual admission page link if available
+      imageUrl:
+        "./admission.jpg", // Replace with real URL if needed
+    },
+    
   ];
 
   const [currentSlide, setCurrentSlide] = useState(0);

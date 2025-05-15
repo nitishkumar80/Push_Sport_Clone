@@ -5,7 +5,11 @@
 .sports-page {
     padding: 2rem;
     font-family: 'Nunito', sans-serif;
-    margin-top: 110px;
+    
+    margin: 150px auto 20px auto;
+    padding: 0 15px;
+    
+  max-width: 1500px;
   }
   
   .sports-header {

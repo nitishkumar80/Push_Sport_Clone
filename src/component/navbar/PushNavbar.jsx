@@ -63,7 +63,7 @@ const Navbar = () => {
                 <a href="/Franchise" className="nav-link" onClick={closeMobileMenu}>Franchise</a>
               </li>
               <li className="nav-item">
-                <a href="#" className="nav-link" onClick={closeMobileMenu}>Fee Structure</a>
+                <a href="/membership" className="nav-link" onClick={closeMobileMenu}>Membership</a>
               </li>
               <li className="nav-item">
                 <a href="/about" className="nav-link" onClick={closeMobileMenu}>About Us</a>
